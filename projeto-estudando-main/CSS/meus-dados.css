@@ -1,0 +1,6 @@
+/* Estilos exclusivos da página de dados. */
+@import url("base.css");
+
+.pagina-meus-dados .resumo {
+  margin-top: 32px;
+}

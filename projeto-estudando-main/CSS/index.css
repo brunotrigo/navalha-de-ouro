@@ -1,0 +1,21 @@
+/* Estilos exclusivos da página inicial. */
+@import url("base.css");
+
+.pagina-inicial .hero {
+  min-height: 560px;
+}
+
+.pagina-inicial .hero__acoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pagina-inicial .chamada__descricao {
+  max-width: 420px;
+}
+
+.pagina-inicial .avaliacao {
+  color: var(--primaria);
+  margin-top: 12px;
+}

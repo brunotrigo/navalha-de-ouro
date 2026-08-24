@@ -1,0 +1,6 @@
+/* Estilos exclusivos da página de login. */
+@import url("base.css");
+
+.pagina-login .formulario {
+  margin-top: 32px;
+}

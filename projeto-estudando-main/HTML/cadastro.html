@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Criar conta | Navalha de Ouro</title>
+  <meta name="description" content="Cadastre-se na Navalha de Ouro e tenha acesso a agendamentos, planos e condições exclusivas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../CSS/cadastro.css" />
+</head>
+<body class="pagina-cadastro">
+  <header id="cabecalho"></header>
+
+  <main class="container container-estreito">
+    <span class="etiqueta-secao">Novo cliente</span>
+    <h1>Criar conta</h1>
+    <p class="suave">Seus dados ficam salvos apenas neste navegador (localStorage).</p>
+
+    <form class="superficie-vidro formulario" id="form-cadastro" novalidate>
+      <fieldset>
+        <legend class="etiqueta-secao">Dados pessoais</legend>
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="nome" placeholder="Entre 15 e 80 letras" />
+          <p class="erro" data-erro="nome"></p>
+        </div>
+        <div class="dupla">
+          <div class="campo">
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00" />
+            <p class="erro" data-erro="cpf"></p>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@email.com" />
+            <p class="erro" data-erro="email"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="etiqueta-secao">Endereço</legend>
+        <div class="dupla">
+          <div class="campo">
+            <label for="cep">CEP <span id="carregando-cep" class="suave oculto">buscando…</span></label>
+            <input id="cep" name="cep" inputmode="numeric" placeholder="00000-000" />
+            <p class="erro" data-erro="cep"></p>
+          </div>
+          <div class="campo">
+            <label for="rua">Rua</label>
+            <input id="rua" name="rua" readonly />
+            <p class="erro" data-erro="rua"></p>
+          </div>
+          <div class="campo">
+            <label for="bairro">Bairro</label>
+            <input id="bairro" name="bairro" readonly />
+          </div>
+          <div class="dupla">
+            <div class="campo">
+              <label for="cidade">Cidade</label>
+              <input id="cidade" name="cidade" readonly />
+            </div>
+            <div class="campo">
+              <label for="uf">UF</label>
+              <input id="uf" name="uf" readonly />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="etiqueta-secao">Telefones</legend>
+        <div class="dupla">
+          <div class="campo">
+            <label for="fixo">Telefone fixo</label>
+            <input id="fixo" name="fixo" inputmode="tel" placeholder="(+55)  21-33445566" />
+            <p class="erro" data-erro="fixo"></p>
+          </div>
+          <div class="campo">
+            <label for="celular">Celular</label>
+            <input id="celular" name="celular" inputmode="tel" placeholder="(+55)   21-999887766" />
+            <p class="erro" data-erro="celular"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="etiqueta-secao">Acesso</legend>
+        <div class="tripla">
+          <div class="campo">
+            <label for="login">Login</label>
+            <input id="login" name="login" placeholder="6 letras" autocomplete="username" />
+            <p class="erro" data-erro="login"></p>
+          </div>
+          <div class="campo">
+            <label for="senha">Senha</label>
+            <input id="senha" name="senha" type="password" placeholder="8 letras" autocomplete="new-password" />
+            <p class="erro" data-erro="senha"></p>
+          </div>
+          <div class="campo">
+            <label for="confirmacao">Confirmar senha</label>
+            <input id="confirmacao" name="confirmacao" type="password" autocomplete="new-password" />
+            <p class="erro" data-erro="confirmacao"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <button class="botao botao--bloco botao--grande" type="submit">Finalizar cadastro</button>
+      <p class="suave centro">Já é cliente? <a class="link-destaque" href="login.html">Entrar</a></p>
+    </form>
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container rodape__grade">
+      <div><div class="marca"><span class="marca__icone">✂</span><span class="fonte-display">Navalha de Ouro</span></div><p>Barbearia e cabeleireiro no coração do Rio de Janeiro. Tradição, precisão e um café por conta da casa.</p></div>
+      <div><h3 class="etiqueta-secao">Horários</h3><ul><li>Ter a Sex — 09h às 21h</li><li>Sábado — 08h às 19h</li><li>Domingo e Segunda — Fechado</li></ul></div>
+      <div><h3 class="etiqueta-secao">Contato</h3><ul><li>(+55)21-999887766</li><li>contato@navalhadeouro.com.br</li><li>Rua Bento Ribeiro, 120 — Bonsucesso</li></ul></div>
+      <div><h3 class="etiqueta-secao">Pagamento</h3><p>Pix, cartão, dinheiro e planos mensais com desconto para assinantes.</p></div>
+    </div><div class="rodape__base">© 2026 Navalha de Ouro — Projeto acadêmico Front-End.</div>
+  </footer>
+
+  <script src="../JS/dados.js"></script>
+  <script src="../JS/layout.js"></script>
+  <script src="../JS/cadastro.js"></script>
+</body>
+</html>

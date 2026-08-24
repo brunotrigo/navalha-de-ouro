@@ -1,0 +1,6 @@
+/* Estilos exclusivos do painel do cliente. */
+@import url("base.css");
+
+.pagina-painel main {
+  max-width: 1152px;
+}

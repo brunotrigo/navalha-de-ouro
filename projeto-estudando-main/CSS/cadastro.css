@@ -1,0 +1,10 @@
+/* Estilos exclusivos da página de cadastro. */
+@import url("base.css");
+
+.pagina-cadastro .formulario {
+  margin-top: 32px;
+}
+
+.pagina-cadastro .link-destaque {
+  color: var(--primaria);
+}

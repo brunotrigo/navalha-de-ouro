@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrar | Navalha de Ouro</title>
+  <meta name="description" content="Acesse sua conta na Navalha de Ouro." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../CSS/login.css" />
+</head>
+<body class="pagina-login">
+  <header id="cabecalho"></header>
+
+  <main class="container container-estreito">
+    <span class="etiqueta-secao">Área do cliente</span>
+    <h1>Entrar</h1>
+    <p class="suave">Acesse suas preferências e seu painel.</p>
+
+    <form class="superficie-vidro formulario" id="form-login" novalidate>
+      <div class="campo">
+        <label for="login">Login</label>
+        <input type="text" id="login" autocomplete="username" required />
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" autocomplete="current-password" required />
+      </div>
+      
+      <p class="erro" id="erro-login"></p>
+      <button class="botao botao--bloco botao--grande" type="submit">Entrar</button>
+    </form>
+  </main>
+
+  <footer class="rodape" id="contato"><div class="container rodape__grade">
+    <div><div class="marca"><span class="marca__icone">✂</span><span class="fonte-display">Navalha de Ouro</span></div><p>Barbearia e cabeleireiro no coração do Rio de Janeiro. Tradição, precisão e um café por conta da casa.</p></div>
+    <div><h3 class="etiqueta-secao">Horários</h3><ul><li>Ter a Sex — 09h às 21h</li><li>Sábado — 08h às 19h</li><li>Domingo e Segunda — Fechado</li></ul></div>
+    <div><h3 class="etiqueta-secao">Contato</h3><ul><li>(+55)21-999887766</li><li>contato@navalhadeouro.com.br</li><li>Rua Bento Ribeiro, 120 — Bonsucesso</li></ul></div>
+    <div><h3 class="etiqueta-secao">Pagamento</h3><p>Pix, cartão, dinheiro e planos mensais com desconto para assinantes.</p></div>
+  </div><div class="rodape__base">© 2026 Navalha de Ouro — Projeto acadêmico Front-End.</div></footer>
+
+  <script src="../JS/dados.js"></script>
+  <script src="../JS/layout.js"></script>
+  <script src="../JS/login.js"></script>
+</body>
+</html>

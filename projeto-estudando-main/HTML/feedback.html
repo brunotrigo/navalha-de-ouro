@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulário de interesse | Navalha de Ouro</title>
+  <meta name="description" content="Conte suas preferências de corte, barba e horários para receber um atendimento sob medida." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../CSS/feedback.css" />
+</head>
+<body class="pagina-feedback">
+  <header id="cabecalho"></header>
+
+  <main class="container container-estreito">
+    <span class="etiqueta-secao">Exclusivo para clientes</span>
+    <h1>Formulário de interesse</h1>
+    <p class="suave">Quanto mais detalhes, melhor preparamos seu atendimento.</p>
+
+    <form class="superficie-vidro formulario" id="form-feedback" novalidate>
+      <div class="campo">
+        <label for="servico">Serviço de maior interesse</label>
+        <select id="servico">
+          <option value="">Selecione um serviço</option>
+          <option>Corte Social</option>
+          <option>Barba Terapia</option>
+          <option>Combo Corte + Barba</option>
+          <option>Corte Feminino</option>
+          <option>Coloração &amp; Luzes</option>
+          <option>Hidratação Capilar</option>
+        </select>
+        <p class="erro" id="erro-servico"></p>
+      </div>
+
+      <fieldset>
+        <legend>Profissional preferido</legend>
+        <div class="linha-opcao"><input type="radio" name="profissional" id="p0" value="Sem preferência" checked /><label for="p0">Sem preferência</label></div>
+        <div class="linha-opcao"><input type="radio" name="profissional" id="p1" value="Rafael Duarte" /><label for="p1">Rafael Duarte</label></div>
+        <div class="linha-opcao"><input type="radio" name="profissional" id="p2" value="Camila Reis" /><label for="p2">Camila Reis</label></div>
+        <div class="linha-opcao"><input type="radio" name="profissional" id="p3" value="Otávio Lima" /><label for="p3">Otávio Lima</label></div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="investimento">Expectativa de investimento por visita:
+          <strong class="valor-destaque" id="valor-investimento">R$ 200</strong>
+        </label>
+        <input type="range" id="investimento" min="1" max="12" step="1" value="8" />
+      </div>
+
+      <fieldset>
+        <legend>Frequência de visitas</legend>
+        <div class="linha-opcao"><input type="radio" name="frequencia" id="f1" value="semanal" /><label for="f1">Semanal</label></div>
+        <div class="linha-opcao"><input type="radio" name="frequencia" id="f2" value="quinzenal" /><label for="f2">Quinzenal</label></div>
+        <div class="linha-opcao"><input type="radio" name="frequencia" id="f3" value="mensal" checked /><label for="f3">Mensal</label></div>
+        <div class="linha-opcao"><input type="radio" name="frequencia" id="f4" value="eventual" /><label for="f4">Eventual</label></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Serviços extras desejados</legend>
+        <div class="linha-opcao"><input type="checkbox" name="extras" id="e1" value="Café especial" /><label for="e1">Café especial</label></div>
+        <div class="linha-opcao"><input type="checkbox" name="extras" id="e2" value="Massagem capilar" /><label for="e2">Massagem capilar</label></div>
+        <div class="linha-opcao"><input type="checkbox" name="extras" id="e3" value="Sobrancelha" /><label for="e3">Sobrancelha</label></div>
+        <div class="linha-opcao"><input type="checkbox" name="extras" id="e4" value="Produtos para levar" /><label for="e4">Produtos para levar</label></div>
+      </fieldset>
+
+      <div class="caixa-switch">
+        <label for="contato">Aceito receber promoções por WhatsApp</label>
+        <input class="controle-largo" type="checkbox" id="contato" checked />
+      </div>
+
+      <div class="campo">
+        <label for="comentario">Comentários</label>
+        <textarea id="comentario" rows="4" placeholder="Alergias, estilo preferido, horários que funcionam melhor…"></textarea>
+      </div>
+
+      <button class="botao botao--bloco botao--grande" type="submit">Enviar preferências</button>
+    </form>
+  </main>
+
+  <footer class="rodape" id="contato"><div class="container rodape__grade">
+    <div><div class="marca"><span class="marca__icone">✂</span><span class="fonte-display">Navalha de Ouro</span></div><p>Barbearia e cabeleireiro no coração do Rio de Janeiro. Tradição, precisão e um café por conta da casa.</p></div>
+    <div><h3 class="etiqueta-secao">Horários</h3><ul><li>Ter a Sex — 09h às 21h</li><li>Sábado — 08h às 19h</li><li>Domingo e Segunda — Fechado</li></ul></div>
+    <div><h3 class="etiqueta-secao">Contato</h3><ul><li>(+55)21-999887766</li><li>contato@navalhadeouro.com.br</li><li>Rua Bento Ribeiro, 120 — Bonsucesso</li></ul></div>
+    <div><h3 class="etiqueta-secao">Pagamento</h3><p>Pix, cartão, dinheiro e planos mensais com desconto para assinantes.</p></div>
+  </div><div class="rodape__base">© 2026 Navalha de Ouro — Projeto acadêmico Front-End.</div></footer>
+
+  <script src="../JS/dados.js"></script>
+  <script src="../JS/layout.js"></script>
+  <script src="../JS/feedback.js"></script>
+</body>
+</html>

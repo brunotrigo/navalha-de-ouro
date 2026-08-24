@@ -1,0 +1,14 @@
+/* Estilos exclusivos do formulário de interesse. */
+@import url("base.css");
+
+.pagina-feedback .formulario {
+  margin-top: 32px;
+}
+
+.pagina-feedback .valor-destaque {
+  color: var(--primaria);
+}
+
+.pagina-feedback .controle-largo {
+  width: auto;
+}

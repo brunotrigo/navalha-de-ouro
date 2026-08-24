@@ -1,0 +1,11 @@
+/* Estilos compartilhados por todas as páginas. */
+@import url("estilo.css");
+
+.pagina-cadastro main,
+.pagina-login main,
+.pagina-painel main,
+.pagina-meus-dados main,
+.pagina-feedback main {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
