@@ -22,7 +22,11 @@ function avisar(mensagem, tipo) {
 
 /* ---------- cabeçalho ---------- */
 function rotaPagina(pagina) {
-  return location.pathname.split("/").indexOf("HTML") !== -1 ? pagina : "HTML/" + pagina;
+  const emPaginaInterna = location.pathname.split("/").indexOf("HTML") !== -1;
+  const destinoInicio = pagina.indexOf("index.html") === 0;
+
+  if (emPaginaInterna) return destinoInicio ? "../../" + pagina : pagina;
+  return destinoInicio ? pagina : "projeto-estudando-main/HTML/" + pagina;
 }
 
 function montarCabecalho() {
